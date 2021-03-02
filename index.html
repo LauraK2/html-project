@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+   <!-- Information 
+   Name:Laura Katsman 
+   Course: Software Development20S
+   Teacher: Mr.Hardman
+   School: Pembina Trails Early College
+   Date Last Modified: February 28 2021-->
+
+ <html>
+     <head> 
+        <title>  Home page  </title>
+        <meta charset= "utf-8"/>
+        <meta name =  "viewport" content = "initial-scale 1.0, user scalable = yes"/>
+     </head>
+
+      <body>
+
+       <h1> Foods recipe </h1> 
+
+       <p> This website will allow you to navigate through different dish and find recipes so you can make them your self. You have a <b>varity</b> from <u>appitiatzers, main dishs and desret</u>. I have given <b>links</b> to webistes with ingredients and step and also have enabled you to press on the youtube video.     </p>
+      
+       
+       <h1> <b>Information</b> </h1>
+        
+        <!-- This is a form that is used to ship a purchase to a customer. -->
+        <form method="GET">
+
+            <br />
+
+            <!-- This label and text input are for the user to enter their dish name (example- PIzza, brownies)-->
+            <label for="food"><b>Dish name:</b></label>
+            <input type="text" name="dish name" size="50" maxlength="75" placeholder="Please enter your dish name" id="dish"/>
+            
+
+            <!-- This label and dropdown menu are for the user to choose their food catagory 
+                from these options: apitizer, Main dish, and desert.-->
+            <p> <label for="dish"><b><u>Please Choose A Dish Catagory:</u></b></label> </p>
+            <select name="dish" id="dish">
+                <option value="appitizer">appitizer</option>
+                <option value="Main dish">Main dish</option>
+                <option value="desert">desert</option>
+            </select>
+            <br />
+
+            <!-- 
+                this label and radio buttons are for the user to choose their preferred way of acessing recipes
+                from these options: a website (defalut) and a youtube video
+             -->
+            <p> <b><u>Please Select A Payment Method:</u></b> </p>
+            <label> <input type="radio" name="recipe source" value="website" checked="true" /> Website </label>
+            <label> <input type="radio" name="recipe source" value="youtube"/> Youtube video </label>
+            <br /><br />
+
+            <form action="/action_page.php">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email">
+            </form>
+
+            <br/>
+            
+            <!-- This will submit the form and process the information needed for delivery. -->
+            <input type="submit" />
+        </form>
+
+        <br /><br />
+
+        <a href="MainDish.html">Main dishes recipes </a>
+         
+
+      </body> 
+ </html> 
